@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f10;
+  color: #ffffff;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #151518;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7CFF6B;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #7CFF6B;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #2a2a2a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #7CFF6B;
+  color: black;
+  transform: scale(1.05);
+}
+
+.btn:visited {
+  color: white;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* GAMES */
+
+.games {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1d;
+  padding: 15px;
+  border-radius: 12px;
+  width: 260px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #7CFF6B;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* SOCIALS */
+
+.socials a {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  border-color: #7CFF6B;
+  color: #7CFF6B;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #151518;
+  margin-top: 40px;
+}
+/* ===== ANIMATIONS ===== */
+
+.card,
+.hero,
+.section {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.btn {
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.game-cover {
+    width: 600px;
+    height: 338px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+    object-fit: contain;
+    background: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .game-cover {
+        width: 95%;
+        height: auto;
+    }
+}
